@@ -4,75 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Общество плоской Земли</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark py-4">
         <div class="container">
-            <h1>Общество плоской Земли</h1>
+            <h1 class="display-4 text-primary">Общество плоской Земли</h1>
+            <p class="lead text-muted">Истина где-то здесь... и она плоская!</p>
         </div>
     </header>
     
-    <nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="library.html">Библиотека</a></li>
-		<li><a href="#facts">Блог</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#join">Присоединиться</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Библиотека</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Блог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#join">Присоединиться</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     
-    <main class="container">
-        <section id="about">
-            <h2>О нашем обществе</h2>
-            <p>Мы - группа свободомыслящих людей, которые осмеливаются подвергать сомнению общепринятые догмы о форме нашей планеты. Наша миссия - распространять правду о плоской Земле и бороться с глобальной дезинформацией.</p>
-            <div class="flat-earth-map">
-                <img src="images/5396.jpg" alt="Карта плоской Земли">
+    <main class="container my-5">
+        <section id="about" class="card bg-dark mb-4">
+            <div class="card-body">
+                <h2 class="card-title h4 text-primary">О нашем обществе</h2>
+                <p class="card-text">Мы - группа свободомыслящих людей, которые осмеливаются подвергать сомнению общепринятые догмы о форме нашей планеты. Наша миссия - распространять правду о плоской Земле и бороться с глобальной дезинформацией.</p>
+                <div class="flat-earth-map text-center my-4">
+                    <img src="images/5396.jpg" alt="Карта плоской Земли" class="img-fluid rounded">
+                    <p class="text-muted mt-2">Традиционная карта плоской Земли</p>
+                </div>
             </div>
         </section>
         
-        <section id="facts">
-            <h2>Неопровержимые факты</h2>
-            <ul>
-                <li>Горизонт всегда выглядит плоским на уровне глаз</li>
-                <li>Реки текут в разных направлениях, а не только "вниз"</li>
-                <li>Никто никогда не видел кривизну Земли невооруженным глазом</li>
-                <li>Авиаперелеты часто следуют нелогичным маршрутам на глобусе</li>
-                <li>Все фотографии "круглой Земли" - это компьютерная графика</li>
-		<li>Фотографии NASA содержат грубые элементы фотошопа</li>
-		<li>На логотипе ООН изображена карта плоской Земли</li>
-		<li>Многие космонавты, летчики и военные являются сторонниками плоской Земли</li>
-		<li>Идеи плоской Земли подвергаются цензуре</li>
-		<li>Все мировые религии подтверждают идеи плоской Земли</li>
-		<li>Антарктида — ледяная стена, ограждающая диск</li>
-            </ul>
-	    <p>И много других фактов и их доказательства читайте в нашем <a href="index.html">Блоге</a></p>
-        </section>
-        
-	<section id="join">
-
-    	    <h2>Присоединяйтесь к нам!</h2>
-            <p>Если вы сомневаетесь в официальной версии формы Земли и хотите узнать правду, вступайте в наше общество!</p>
-            <p>Мы проводим регулярные встречи, эксперименты и исследования. Вместе мы сможем открыть глаза человечеству!</p>
-            <div class="join-cta">
-                <a href="join.html" class="join-button">Присоединиться сейчас</a>
+        <section id="facts" class="card bg-dark mb-4">
+            <div class="card-body">
+                <h2 class="card-title h4 text-primary">Неопровержимые факты</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card bg-secondary h-100">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Горизонт плоский</h3>
+                                <p>Горизонт всегда выглядит плоским на уровне глаз, что невозможно на шарообразной Земле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary h-100">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Реки текут вверх</h3>
+                                <p>Реки текут в разных направлениях, а не только "вниз" как должно быть на шаре</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary h-100">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Нет кривизны</h3>
+                                <p>Никто никогда не видел кривизну Земли невооруженным глазом</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary h-100">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Нелогичные перелеты</h3>
+                                <p>Авиаперелеты часто следуют нелогичным маршрутам на глобусе</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-3">И много других фактов и их доказательства читайте в нашем <a href="blog.html" class="text-primary">Блоге</a></p>
             </div>
         </section>
         
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Email: info@flatearthsociety.org</p>
+        <section id="join" class="card bg-dark mb-4">
+            <div class="card-body">
+                <h2 class="card-title h4 text-primary">Присоединяйтесь к нам!</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Если вы сомневаетесь в официальной версии формы Земли и хотите узнать правду, вступайте в наше общество!</p>
+                        <p>Мы проводим регулярные встречи, эксперименты и исследования. Вместе мы сможем открыть глаза человечеству!</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Эксклюзивные материалы</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Доступ к закрытым мероприятиям</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Участие в экспериментах</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Общение с единомышленниками</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="bg-secondary p-4 rounded">
+                            <div class="mb-3">
+                                <input type="text" class="form-control bg-dark text-light" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control bg-dark text-light" placeholder="Ваш email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control bg-dark text-light" rows="3" placeholder="Почему вы хотите к нам присоединиться?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Присоединиться сейчас</button>
+                            <div class="error-message">
+    <p class="card-error text-danger">ОШИБКА: Некорректный email</p>
+</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="card bg-dark">
+            <div class="card-body">
+                <h2 class="card-title h4 text-primary">Контакты</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Email:</strong> info@flatearthsociety.org</p>
+                        <p><strong>Телефон:</strong> +7 (XXX) XXX-XX-XX</p>
+                        <p><strong>Адрес:</strong> г. Москва, ул. Плоская, д. 1</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="social-links mt-3 mt-md-0">
+                            <a href="#" class="text-decoration-none me-3"><i class="bi bi-vk fs-4"></i></a>
+                            <a href="#" class="text-decoration-none me-3"><i class="bi bi-telegram fs-4"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="bi bi-youtube fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     
-    <footer>
+    <footer class="bg-black text-white py-4 mt-5">
         <div class="container">
-            <p>&copy; 2033 Общество плоской Земли. Все права защищены.</p>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2033 Общество плоской Земли. Все права защищены.</p>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('#join form');
+    const errorMessage = document.querySelector('.error-message');
+
+    errorMessage.style.visibility = 'hidden';
+    
+   
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const emailInput = form.querySelector('input[type="text"][placeholder="Ваш email"]');
+        const email = emailInput.value.trim();
+        
+        // Простая проверка email с помощью регулярного выражения
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        if (emailRegex.test(email)) {
+            // Если email валиден, перенаправляем на другую страницу
+            window.location.href = 'success.html';
+        } else {
+            // Если email невалиден, показываем ошибку
+            errorMessage.style.visibility = 'visible';
+            emailInput.focus();
+        }
+    });
+    
+    // Скрываем ошибку при начале ввода
+    form.querySelector('input[type="text"][placeholder="Ваш email"]').addEventListener('input', function() {
+    });
+});
+</script>    
 </body>
 </html>
